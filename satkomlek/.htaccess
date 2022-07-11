@@ -1,0 +1,31 @@
+
+## CSP
+<IfModule mod_headers.c>
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
+Header always set Content-Security-Policy "upgrade-insecure-requests;"
+</IfModule>
+
+<IfModule mod_headers.c>
+    Header set Content-Security-Policy font-src * data: blob: 'unsafe-inline'; default-src * 'unsafe-inline' 'unsafe-eval'; script-src * 'unsafe-inline' 'unsafe-eval'; connect-src * 'unsafe-inline'; img-src * data: blob: 'unsafe-inline'; frame-src *; style-src * 'unsafe-inline'
+    Header set Content-Security-Policy "base-uri 'self'; manifest-src 'self'; object-src 'self'; form-action 'self'; frame-ancestors 'self'" env=HTTP
+</IfModule>
+# Strict-Transport-Security-Header - if you are using https on your website, comment this block out
+<IfModule mod_headers.c>
+   Header set Strict-Transport-Security "max-age=31536000; includeSubDomains" env=HTTPS
+</IfModule>
+## This prevents that false issued certificates for this website can be used unnoticed. (Experimental)
+## @see https://tools.ietf.org/html/draft-ietf-httpbis-expect-ct-02
+<IfModule mod_headers.c>
+   Header set Expect-CT enforce,max-age=2592000,report-uri="https://x1z0t0by.uriports.com/reports/report" env=HTTPS
+  Header always set Feature-Policy "sync-xhr 'self' report-uri https://x1z0t0by.uriports.com/reports/report"
+  #Header always set Feature-Policy-Report-Only "geolocation 'none'; camera 'none'; fullscreen *; payment 'self'"
+</IfModule>
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php73” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php73 .php .php7 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit

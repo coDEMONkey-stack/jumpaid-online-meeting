@@ -1,0 +1,6 @@
+[22-Aug-2020 03:16:28 UTC] PHP Fatal error:  Cannot declare class Login, because the name is already in use in /home/jumpa24/public_html/application/views/login/view.php on line 45
+[22-Aug-2020 03:16:29 UTC] PHP Fatal error:  Cannot declare class Login, because the name is already in use in /home/jumpa24/public_html/application/views/login/view.php on line 45
+[22-Aug-2020 03:16:30 UTC] PHP Fatal error:  Cannot declare class Login, because the name is already in use in /home/jumpa24/public_html/application/views/login/view.php on line 45
+[22-Aug-2020 03:16:30 UTC] PHP Fatal error:  Cannot declare class Login, because the name is already in use in /home/jumpa24/public_html/application/views/login/view.php on line 45
+[22-Aug-2020 03:16:30 UTC] PHP Fatal error:  Cannot declare class Login, because the name is already in use in /home/jumpa24/public_html/application/views/login/view.php on line 45
+[22-Aug-2020 03:16:31 UTC] PHP Fatal error:  Cannot declare class Login, because the name is already in use in /home/jumpa24/public_html/application/views/login/view.php on line 45

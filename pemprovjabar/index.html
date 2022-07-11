@@ -1,0 +1,673 @@
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head lang="en">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <meta charset="UTF-8">
+  
+    <title>Pemerintah Provinsi Jawa Barat Rapat Daring, Sedaring / Webinar</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="https://layanan.jumpa.id/webserver/css/base.css?i=1.0.13.5">
+        <link rel="shortcut icon" href="jabar1.png" type="image/vnd.microsoft.icon">
+        <link rel="stylesheet" href="https://layanan.jumpa.id/webserver/css/register.css?i=1.0.13.5">
+         //*  <link rel="stylesheet" href="https://layanan.jumpa.id/webserver/css/ui.css?i=1.0.13.5">  */
+	<script src="https://layanan.jumpa.id/webserver/js/common/jquery-3.4.0.min.js?i=1.0.13.5"></script>
+	<script type="text/javascript" src="https://layanan.jumpa.id/webserver/js/common/jquery-migrate-3.1.0.min.js?i=1.0.13.5"></script>
+	<script src="https://layanan.jumpa.id/webserver/js/common/md5.js?i=1.0.13.5"></script>
+	<script type="text/javascript">
+	function beforeSubmit(){
+        var eAccount = $("input[name='eAccount']").val();
+        var password = $("input[name='pwd']").val();
+        var ePassword = hex_md5(password);
+        $("input[name='ePassword']").val(ePassword);
+        return true;
+    }
+    </script>
+        <style>
+
+
+</head>
+<style>
+        /** CSS UI */
+        /* Tablet Landscape */
+@media screen and (max-width: 1060px) {
+        .login-container .signup-content .login-phonesp { width:67%; }
+        .login-container .signup-content .login-phonesp { width:30%; margin-left:3%;}  
+
+}
+/* Tabled Portrait */
+@media screen and (max-width: 768px) {
+        .login-container .signup-content .login-phonesp { width:100%; }
+        .login-container .signup-content .login-phonesp { width:100%; margin:0; border:none; }
+
+}
+
+body {
+    min-height: 750px;
+}
+input::-webkit-input-placeholder , textarea::-webkit-input-placeholder{ color:#BDC7D3;}
+input::-moz-placeholder , textarea::-moz-placeholder{ color:#BDC7D3;}
+input:-ms-input-placeholder , textarea:-ms-input-placeholder{ color:#BDC7D3;}
+li b, div b, label b, button b, span button, span b, td b, th b{
+    background-image: url("../img/ui-icon.png");
+}
+.checkbox i{
+    margin-top: -2px;
+}
+.placeholder-value{
+    color: #BDC7D3;
+}
+.footer .container{
+    line-height: 56px;
+}
+#slider-logo {
+    float: left;
+    max-width: 565px;
+    min-width: 500px;
+    text-align: center;
+    margin-top: 30px;
+}
+#slider-logo b{
+    width: 285px;
+    height: 185px;
+    background-position: -40px -24px;
+    transform: scale(0.88);
+}
+#slider-logo .icon{
+    font-size: 0;
+}
+#slider-logo .slider-logo-ipvt {
+    font-weight: bold;
+    font-size: 50px;
+    color: #fff;
+    /*margin: 68px 0 30px;*/
+    word-wrap: break-word;
+    margin-top: 10px;
+}
+#slider-logo p {
+    color: rgba(255,255,255,0.6);
+    font-size: 28px;
+    line-height: 42px;
+}
+.login-container .login-content .login{
+    float: right;
+    background: rgba(255,255,255,0.95);
+    width: 420px;
+}
+.login-container {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    color: #00000;
+    bottom: 0;
+    background: url(bg-jabar.jpg) no-repeat scroll center top transparent;
+    background-size: cover;
+}
+.login-container .login-content {
+    position: relative;
+    width: 70%;
+    height: 510px;
+    top: 18vh;
+    left: 0;
+    margin: 0 auto;
+    min-width: 1080px;
+}
+
+.login-header {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    width: 100%;
+    height: 60px;
+    background:rgba(0, 135, 57, 1);
+    box-shadow: none;
+    filter: none;
+    /*box-shadow: 0 4px 8px rgba(0,0,0,0.2);*/
+    /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#C8F8F8F8,endColorstr=#C8F8F8F8),progid:DXImageTransform.Microsoft.Shadow(color='#000000', Direction=4, Strength=8);*/
+}
+.login-header .link a{
+    color: rgba(255,255,255,0.7);
+    height: 26px;
+    padding: 0 26px;
+    line-height: 26px;
+}
+.login-header .link a:hover{
+    background: none;
+    color: rgba(255,255,255,1);
+}
+.login-header .link a.right {
+    background: none;
+    color: rgba(255,255,255,0.7);
+    border-radius: 2px;
+    border:1px solid rgba(255,255,255,0.4);
+}
+.login-header .link a.right:hover{
+    background:rgba(255,255,255,0.1);
+    color: rgba(255,255,255,1);
+}
+.footer {
+    height: 56px;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    z-index: 99;
+    background:none;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+.login-footer .copyright{
+    color: rgba(255,255,255,0.45);
+}
+.login-footer .container ul li, .login-footer .container ul li a{
+    color: rgba(255,255,255,0.45);
+}
+.login-footer .container ul li a:hover, .login-footer .container ul li.cookiescript_badge:hover{
+    color: #fff;
+    text-decoration: none;
+}
+.login-footer .languageBox{
+    border: 1px solid #668EA9;
+    color:  rgba(255,255,255,0.9);
+    background: none;
+}
+.login-footer .languageBox:hover{
+    background:rgba(255,255,255,0.1);
+    color: rgba(255,255,255,1);
+}
+.login-footer .languageBox .languageHide{
+    color: #000;
+}
+.login-container .login-content .login-form .title{
+    background: none;
+}
+.languageBox .ico-arr{
+    background: url(../img/ui-icon.png) no-repeat  -1213px -28px;
+}
+.login-header .logo b{
+    background-position: -363px -17px;
+}
+.footer-logo{
+    left: 40px;
+}
+.footer-logo b {
+    background-position: -619px -34px;
+    width: 140px;
+    height: 26px;
+    vertical-align: middle;
+}
+.login-container .login-content .login-form .title {
+    width: 100%;
+    height: 70px;
+    line-height: 40px;
+    text-align: left;
+    font-size: 28px;
+    color: #008739;
+    padding-left: 30px;
+    padding-top: 25px;
+    font-weight: 600;
+}
+.login-container .login-content .login{
+    box-shadow: none;
+    border-radius: 10px;
+}
+.login-container .login-content .login .login-form .form-row{
+    padding-left: 30px;
+    padding-right: 30px;
+    height: auto;
+    margin-bottom: 18px;
+}
+.login-container .login-content .login .login-form .form-row.form-row-label{
+    margin-bottom: 5px;
+}
+.login-container .login-content .login .login-form .form-row.form-row-label:first-child{
+    margin-bottom: 0;
+}
+.login-form .form-row input{
+    width: 100%;
+    border: none;
+    height: 100%;
+    line-height: 100%;
+    padding: 0;
+    background: transparent;
+}
+.ui-input{
+    border-radius:5px;
+    padding: 8px 12px 8px 44px;
+    position: relative;
+    background: #fff;
+    border: 1px solid #fff;
+}
+#registerForm{
+    padding-top: 20px;
+}
+#loginInfoForm{
+     /*padding-top: 30px;*/
+    height: auto;
+ }
+#loginInfoForm.userActiveSetPwd{
+    height: auto;
+}
+#registerForm .ui-input, #loginInfoForm .ui-input{
+    padding: 8px 12px 8px 16px;
+}
+.ui-input.focus{
+    border: 1px solid #000000	;
+}
+.ui-input .pre-input, .ui-input .delete-input{
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top:12px;
+}
+.ui-input .pre-input{
+    left: 18px;
+}
+.ui-input .icon-user{
+  background-position: -769px -36px;
+}
+.ui-input .delete-input{
+    background-position: -976px -36px;
+    right: 18px;
+    display: none;
+}
+.ui-input .icon-pwd{
+    background-position: -822px -36px;
+}
+.ui-input .icon-validate{
+    background-position: -1256px -36px;
+}
+.login-container .login-content .login .login-form .form-row.securityCode{
+    height: 42px;
+}
+.login-container .signup-content .login .login-form .form-row.securityCode{
+    height: auto;
+}
+.securityCode .ui-input{
+    width: 174px;
+    float: left;
+}
+.login-form .form-row input{
+    height: 22px;
+    line-height: 22px;
+}
+.login-form .form-row.securityCode input{
+    width: 100%;
+}
+.login-form .form-row.securityCode img {
+    margin-left: 10px;
+    display: inline-block;
+    float: right;
+    border-radius: 5px;
+    margin-right: 0;
+    width: 112px;
+    cursor: pointer;
+    height: 40px;
+}
+#registerForm.login-form .form-row.securityCode .ui-input{
+    width: 202px;
+}
+.login-form .form-row input:focus, .forgetCheckForm .form-row input:focus{
+    border: none;
+}
+.login-container .login-content .login .login-form .form-row.forgetPwd{
+    padding-right: 30px;
+    /*margin-top: 65px;*/
+}
+.login-container .login-content .login .login-form .form-row.forgetPwd label a{
+    color: #008739 ;
+}
+.login-form .form-row.btn button {
+    min-width: 100%;
+    margin: 0 0px 40px 0;
+    position: relative;
+    overflow: visible;
+    background: #008739;
+    border-radius: 5px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0;
+    font-size: 16px;
+    border: 1px solid #000000	;
+}
+#registerForm.login-form .form-row.btn button{
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.login-form .form-row.btn button:hover{
+    background: #000000	;
+}
+.login-form .form-row input.error, .forgetCheckForm .form-row input.error {
+    background:none;
+}
+.login-form .form-row input.error, .forgetCheckForm .form-row input.error {
+    border: none;
+}
+.login-form .form-row .ui-input.error, .forgetCheckForm .form-row .ui-input.error {
+    background-color: #ffecec;
+}
+.login-form .form-row .ui-input.error, .forgetCheckForm .form-row .ui-input.error {
+    border: 1px solid #F95B5B;
+}
+.login-form .form-row .error-box.error, .forgetCheckForm .form-row .error-box.error{
+    background: none;
+    color: #F95B5B;
+}
+.login-form .form-row .error-box, .forgetCheckForm .form-row .error-box{
+    padding: 0;
+    background: none;
+}
+/*.login-form .form-row .error-box.error:before, .forgetCheckForm .form-row .error-box.error:before{*/
+/*    position: absolute;*/
+/*    display: block;*/
+/*    width: 0;*/
+/*    height: 0;*/
+/*    border: solid transparent;*/
+/*    pointer-events: none;*/
+/*    content: "";*/
+/*    border-right-color: #F95B5B;*/
+/*    border-width: 13px;*/
+/*    top: 12px;*/
+/*    right: 98%;*/
+/*}*/
+.login-form .form-row .error-box{
+    position: absolute;
+    text-align: left;
+    font-size: 12px;
+    white-space: nowrap;
+    line-height: 20px;
+    bottom: -18px;
+    left: -1px;
+    border:none;
+}
+.selectbox{
+    border-radius: 5px;
+}
+.s-input-box{
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 16px;
+}
+.s-hide-box span{
+    padding-left: 15px;
+}
+.arr-box .ico-arr, .selectbox .ico-arr{
+    background: url(../img/ui-icon.png) no-repeat  -1156px -34px ;
+    margin-right: 6px;
+}
+.login-form .form-row .selectbox, .login-form .form-row.enterpriseLocal .selectbox{
+    width: 100%;
+}
+.login-container .login-content .login .login-form .form-row .name{
+    color: #99A1A9;
+}
+.login-container .login-content .login .login-form .form-row.enterpriseLocal {
+    height: 65px;
+}
+.login-container .signup-content .login-phonesp{
+    margin-top: -30px;
+}
+.login-container .login-content.signup-content .login .login-form .form-row.btn{
+    margin-bottom: 22px;
+    margin-top: 68px;
+    height: 55px;
+}
+.login-container .signup-content .login .login-form .form-row{
+    margin-bottom: 10px;
+}
+.form-row .system-error{
+    position: absolute;
+    left: 30px;
+    top: 40px;
+    right: 30px;
+    max-width: initial;
+    text-align: center;
+    background: none;
+    color: #F95B5B;
+}
+#selectUserProtocol-error{
+    left: 30px;
+}
+.login-container .login-content.login-info-container .login.login-margin{
+    margin-top: 20px;
+}
+.capsWarning{
+    left: 5px;
+    top: 47px;
+}
+.label-value{
+    font-size: 14px;
+    color: #222;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    word-wrap: normal;
+    max-width: 240px;
+    vertical-align: middle;
+}
+.label-name{
+    width: 108px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.login-form .form-row input, .login-form .form-row .selectbox, .forgetCheckForm .form-row input, .forgetCheckForm .form-row .selectbox{
+    color: #222;
+}
+.login-container .login-content.user-active .login{
+    float: none;
+}
+ /** @media screen and (max-height: 840px){
+    .login-container .signup-content .login-phonesp {
+        margin-top: -50px;
+    }
+    
+} */
+</style>
+<body  class="login-body">
+<div class="container login-container">
+    <img id="bigpic" style="display:none;" src="https://layanan.jumpa.id/webserver/img/bg.jpg?i=1.0.13.5" />
+    <img id="all-icon" style="display:none;" src="https://layanan.jumpa.id/webserver/img/ui-icon.png?i=1.0.13.5" />
+    <div id="" class="header login-header">
+            <div class="logo" style="cursor:pointer" onclick="location.href='http://layanan.jumpa.id'">
+                        <img src="jumpa-logo-white.png" alt="Pemerintah Provinsi Jawa Barat" />
+                <!--
+                            <img src="https://layanan.jumpa.id/webserver/img/White_logo_2.png" alt="ABC" />
+                -->            
+                    </div>
+        <div class="link">
+        <a href="./join/" target="_blank" rel="noreferrer" class="left">Join Rapat Daring, Sedaring / Webinar</a>
+       <!-- <a href="#" class="left">Log In</a> -->
+                  <!--  <a href="https://layanan.jumpa.id/signup" class="right">Sign Up</a> -->
+            </div>
+</div>
+    <div class="login-content">
+        <div id="slider-logo">
+                            <div class="icon">
+                                            <img height="162px" src="jabar1.png" alt="Pemerintah Provinsi Jawa Barat" />
+                                            <!--
+                                            <img height="162px" src="https://layanan.jumpa.id/webserver/img/White_logo_3.png" alt="ABC" />
+                                            -->
+                                    </div>
+                        <div style="color:yellow;" class="slider-logo-ipvt">Pemerintah Provinsi Jawa Barat </div> <br>
+                       <div class="slider-logo-ipvt"><p>Rapat Daring, Sedaring / Webinar</p></div>
+                        <!--
+            <p>Meet from anywhere, anytime on nearly any device</p>
+            -->
+        </div>
+        <div class="login login-margin">
+            <form class="login-form login-form-bg" id="loginForm" method="post" action="https://layanan.jumpa.id/login">
+                <input type="hidden" name="ePassword">
+                <p class="title">
+                    Log In</p>
+                <div class="form-row">
+                    <div class="ui-input">
+                        <b class="pre-input icon-user"></b>
+                        <input id="uerName" name="eAccount" type="text" tip-data=""
+                           maxlength="64" value="" autocomplete="off" placeholder="Username or Email">
+                        <b class="delete-input"></b>
+                        <span id="uerName-error" class="error-box"></span>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="ui-input">
+                        <b class="pre-input icon-pwd"></b>
+                        <input class="capsPwd" id="password" name="pwd" type="password" maxlength="16" placeholder="Password"
+                           tip-data="" autocomplete="off">
+                        <b class="delete-input"></b>
+                        <span id="password-error" class="error-box"></span>
+                        <p id="capsWarning" class="capsWarning"><i class="ico-angle"></i>Caps Lock Open</p>
+                    </div>
+                </div>
+                                <div class="form-row forgetPwd">
+                    <label class=""><a href="javascript:void(0);">Forgot password</a></label>
+                </div>
+                <div class="form-row btn">
+                    <button type="submit" onclick="return beforeSubmit();" class="submit btn-blue-radius">Log In                    </button>
+                    <span id="system-error" class="system-error"></span>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="footer login-footer">
+    <div class="container">
+        <div class="copyright">
+            &copy;<span class="year">2020</span> Pemerintah Provinsi Jawa Barat - Rapat Daring, Sedaring / Webinar</div>
+            <!--
+                <div class="languageBox fl">
+            <b class="ico-arr" value=en></b>
+                                                                        <div class="languageCur">English</div>
+                                                                                                                                                        <div class="languageHide">
+                                <span case=de>Deutsch</span>
+                                <span case=en>English</span>
+                                <span case=es>Español</span>
+                                <span case=fr>Français</span>
+                                <span case=ja>日本語</span>
+                                <span case=zh>简体中文</span>
+                            </div>
+        </div>
+        -->
+    </div>
+        </div>
+    <script type="text/javascript"> _linkedin_data_partner_id = "65100"; </script><script type="text/javascript"> (function(){var s = document.getElementsByTagName("script")[0]; var b = document.createElement("script"); b.type = "text/javascript";b.async = true; b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js"; s.parentNode.insertBefore(b, s);})(); </script> <noscript> <img height="1" width="1" style="display:none;" alt="" src="https://dc.ads.linkedin.com/collect/?pid=65100&fmt=gif" /> </noscript>
+</div>
+<script type="text/javascript">
+cookiescript ()
+function cookiescript () {
+    switchcookie ()
+    $(document).on('click', ".cookiescript_accept, .cookiescript_reject, .cookiescript_badge", function (e) {
+        e.stopPropagation()
+        var val = "0"
+        if ($(this).hasClass('cookiescript_badge')) {
+            val = "1"
+        }
+        localStorage.setItem('cookiescript', val)
+        switchcookie ()
+    })
+    function switchcookie () {
+        var cookiescript = localStorage.getItem('cookiescript') == null ? "1": localStorage.getItem('cookiescript')
+        if (cookiescript == "1") {
+            $(".cookiescript_injected").show()
+            //$(".cookiescript_badge").hide()
+        } else {
+            $(".cookiescript_injected").hide()
+            //$(".cookiescript_badge").show()
+        }
+    }
+}
+    <div class="cookiescript_injected">
+        <div class="cookiescript_header">This website uses cookies</div>
+        <div>This website stores cookies on your computer. In order to use our applications and services, we collect these cookies which help provide our services to you. You can find out more about the cookies we use in our Privacy Statement.</div>
+        <div class="cookiescript_buttons">
+            <div class="cookiescript_accept">I agree</div>
+            <div class="cookiescript_reject">I disagree</div>
+                        <div class="cookiescript_readmore"><a href="http://layanan.jumpa.id" target="_blank">Read more</a></div>
+                    </div>
+    </div>
+    
+</script>
+<style type="text/css">
+.cookiescript_injected{
+    position: fixed;
+    width: 100%;
+    left: 0px;
+    bottom: 0px;
+    letter-spacing: normal;
+    padding: 15px 0px 5px;
+    text-align: center;
+    font-size: 14px;
+    z-index: 9999;
+    opacity: 0.8;
+    color: #fff;
+    background-color: rgb(17, 17, 17);
+    box-shadow: rgb(0, 0, 0) 0px 0px 8px;
+}
+.cookiescript_header{
+    padding: 0px 0px 7px;
+    font-weight: bold;
+    font-size: 16px;
+}
+.cookiescript_buttons{
+    margin: 10px auto 5px;
+}
+.cookiescript_accept, .cookiescript_reject, .cookiescript_readmore{
+    display: inline-block;
+    padding: 6px 10px;
+    margin: 0px 15px 0px 0px;
+    cursor: pointer;
+    border: 0px;
+    border-radius: 5px;
+    transition: 0.25s;
+    text-shadow: rgb(0, 0, 0) 0px 0px 2px;
+}
+.cookiescript_accept{
+    background-color: rgb(91, 183, 91);
+}
+.cookiescript_reject{
+    background-color: rgb(183, 91, 91);
+}
+.cookiescript_readmore{
+    background-color: rgb(105, 118, 119);
+}
+.cookiescript_readmore a{
+    color: #fff;
+}
+.cookiescript_badge{
+    cursor: pointer;
+}
+.cookiescript_badge:hover{
+text-decoration: underline;
+}
+</style>
+</body>
+</html>
+<script type="text/javascript">
+	var APP_DOMAIN = "https://layanan.jumpa.id";
+    var HOME_DOMAIN = "http://layanan.jumpa.id";
+	var Style_Domain = "https://layanan.jumpa.id";
+	var MEETING_DOMAIN="https://layanan.jumpa.id";
+	var pwdPattern = /((?=.*[0-9])(?=.*[a-zA-Z])|(?=.*[0-9])(?=.*[^A-Za-z0-9])|(?=.*[a-zA-Z])(?=.*[^A-Za-z0-9])).{8,16}/;
+	var LANGUAGE = "en";
+	var SYSTEM_NAME = "ABC";
+	var DEVICE_ID = "IPVT ID";
+</script>
+
+<script src="https://layanan.jumpa.id/webserver/js/common/jquery.validate.js?i=1.0.13.5"></script>
+<script src="https://layanan.jumpa.id/webserver/js/common/jquery.form.js?i=1.0.13.5"></script>
+<script src="https://layanan.jumpa.id/webserver/js/message/en.js?i=6b13beb4dbe0197b"></script>
+<script src="https://layanan.jumpa.id/webserver/js/common/common.js?i=1.0.13.5"></script>
+<script src="https://layanan.jumpa.id/webserver/js/validate-common.js?i=1.0.13.5"></script>
+<script src="https://layanan.jumpa.id/webserver/js/login.js?i=1.0.13.5"></script>
+<script>
+/**
+ * Created by Administrator on 2015/6/19.
+ */
+
+</script>
+

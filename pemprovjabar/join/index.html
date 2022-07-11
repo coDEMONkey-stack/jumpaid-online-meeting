@@ -1,0 +1,391 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+            <meta name="keywords" content="meeting,webinar,video conferencing, video conference, online meetings, web meeting, video meeting, cloud meeting, cloud video, group video call, group video chat, screen share, application share, mobility, mobile collaboration, desktop share, video collaboration, group messaging"/>
+        <meta name="description"  content=""   />
+                            <title> Pemerintah Provinsi Jawa Barat - Rapat Daring, Sedaring / Webinar | Join Meeting  </title>
+                            
+                            
+                <script type="text/javascript">
+	var APP_DOMAIN = "https://layanan.jumpa.id";
+	var API_DOMAIN = "https://layanan.jumpa.id";
+	var DEPLOY_VERSION = "1.0.13.27";
+	var Style_Domain = "https://layanan.jumpa.id";
+	var ACCOUNT_DOMAIN="https://layanan.jumpa.id";
+	var firefoxPlugin_switch="n";
+	var LOG_PAGE = "https://layanan.jumpa.id/rtc/logPage";
+	var JOIN_MEETING_PAGE_URL= APP_DOMAIN+"/rtc/dispatch";
+		var IPVT_HOME = "http://layanan.jumpa.id";
+		var SDK_GUEST_DOMAIN = "FE9AAD8709DD4C8ABA399E3184A80734";
+    var Lang = "en";
+    var systemName = "ABC";
+    var systemNameId ="Device";
+	var supportUrl = "http://layanan.jumpa.id/support";
+	if (supportUrl === "") {
+        supportUrl = "http://www.grandstream.com/support/firmware"
+	}
+    /****** pageLayoutMode ******
+    0：默认双流大小屏，聊天参会者栏覆盖视频区模式；
+	1：默认双流大小屏，聊天参会者栏与视频区互斥模式
+	*/
+    var pageLayoutMode = 1;
+
+	//var emailPattern = /^[^<> @,;]*@(?:[^<> @,;]+\.)+(?:[-\w]){2,32}$/;
+	//正则验证规则与后端统一
+	//var emailPattern = /^\w+[a-zA-Z0-9_\-{\.}]*@([a-zA-Z0-9\-]+[\.]?)*[a-zA-Z0-9\-]+\.[a-zA-Z]{2,}$/;
+	var emailPattern = /^[^<> @,;]*@(?:[^<> @,;]+\.)+(?:[-\w]){2,32}$/;
+	var pwdPattern = /((?=.*[0-9])(?=.*[a-zA-Z])|(?=.*[0-9])(?=.*[^A-Za-z0-9])|(?=.*[a-zA-Z])(?=.*[^A-Za-z0-9])).{8,16}/;
+</script>
+
+<script type="text/javascript">
+		</script>
+<script>
+	var webrtcReleaseMode = localStorage.webrtcReleaseMode;
+	console.log(">>>>>>>>webrtcReleaseMode:"+webrtcReleaseMode);
+</script>
+
+<script src="https://layanan.jumpa.id/web/js/common/jquery-3.4.0.min.js?i=1.0.13.27"></script>
+<script src="https://layanan.jumpa.id/web/js/common/jquery-migrate-3.1.0.min.js?i=1.0.13.27"></script>
+<script src="https://layanan.jumpa.id/web/js/common/jquery-qrcode.min.js?i=1.0.13.27"></script>
+<script src="https://layanan.jumpa.id/web/js/common/webrtc-log.js?i=1.0.13.27" crossorigin="anonymous"></script>
+<script src="https://layanan.jumpa.id/web/js/common/client.js?i=1.0.13.27" crossorigin="anonymous"></script>
+<script src="https://layanan.jumpa.id/web/js/common/jquery.md5.js?i=1.0.13.27"></script>
+<script src="https://layanan.jumpa.id/web/js/common/sha256.js?i=1.0.13.27"></script>
+
+<script src="https://layanan.jumpa.id/web/js/message/en.js?i=1.0.13.27&v=1595428195504" crossorigin="anonymous"></script>
+<script src="https://layanan.jumpa.id/web/js/common/common.js?i=1.0.13.27" crossorigin="anonymous"></script>
+
+<script src="https://layanan.jumpa.id/web/js/webrtc/debug.js?i=1.0.13.27" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="../jabar1.png" type="image/vnd.microsoft.icon">
+    <link rel="stylesheet" href="https://layanan.jumpa.id/web/website/css/bootstrap.min.css?i=1.0.13.27">
+    <link rel="stylesheet" href="https://layanan.jumpa.id/web/css/base.css?i=1.0.13.27">
+   <!-- <link rel="stylesheet" href="https://layanan.jumpa.id/web/website/css/styles.css?i=1.0.13.27"> -->
+    <link rel="stylesheet" href="https://nu.jumpa.id/join/style.css?i=1.0.13.27">
+    <!--加会页面20200414新样式-->
+   <!-- <link rel="stylesheet" href="https://layanan.jumpa.id/web/website/css/newJoinStyle.css?i=1.0.13.27"> -->
+      <link rel="stylesheet" href="https://nu.jumpa.id/join/joinstyle.css?i=1.0.13.27">
+
+    <script>
+    	localStorage.statsSending="false"; //disabled stats report, must set before adapter.js load
+    </script>
+    <script src="https://layanan.jumpa.id/web/js/webrtc/adapter.js?i=1.0.13.27"></script>
+    <style>
+        @media(min-width:992px){
+            #sign-in-content{height:467px;}
+        }
+    </style>
+</head>
+
+<style>
+.login-container {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    color: #FFF;
+    bottom: 0;
+    background: url(../bg-jabar.jpg) no-repeat scroll center top transparent;
+    background-size: cover;
+}
+.login-container .login-content {
+    position: relative;
+    width: 70%;
+    height: 510px;
+    top: 18vh;
+    left: 0;
+    margin: 0 auto;
+    min-width: 1080px;
+}
+.all-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: #FFF;
+    bottom: 0;
+    background: url(../bg-jabar.jpg) center 0 no-repeat;
+    background-size: cover;
+    min-height: 680px;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+</style>
+
+<body>
+<div class="all-container">
+    <div class="header login-header">
+    <div class="fl fz26 nav-logo">
+                                    <div class="eid-head-logo">
+                                        <img class="eid-img" src="../jumpa-logo-white.png"/>
+                                        <!--
+                    <img class="eid-img" src="https://layanan.jumpa.id/webserver/img/White_logo_2.png"/>
+                    -->
+                </div>
+                        </div>
+    <div class="link undis">
+        <a href="../" class="left">Log In</a>
+      <!--  <a href="https://layanan.jumpa.id/signup" class="right">
+                            Sign Up                    </a> -->
+    </div>
+    <!--<div class="down-app undis">下载客户端</div>
+    <div class="dialogBox app-qr-code-box undis">
+        <div class="alert-title-white">
+            <b class="alert-close"></b>
+            <span>扫一扫下载客户端</span>
+        </div>
+        <div class="app-qr-code-box-body">
+            <div>
+                <div class="qr-code" id="qr-code-android"></div>
+                <div class="qr-code-title">安卓客户端</div>
+            </div>
+            <div>
+                <div class="qr-code" id="qr-code-ios"></div>
+                <div class="qr-code-title">ios客户端</div>
+            </div>
+        </div>
+    </div> -->
+</div>    <div id="sign-in-slider" class="slider">
+        <div class="container bigpic-inner" id="sign-in-content">
+            <div id="slider-logo">
+                                                            <img class="login-logo" src="../jabar1.png"/>
+                                                            <!--
+                                                            <img class="login-logo" src="https://layanan.jumpa.id/webserver/img/White_logo_3.png"/>
+                                                            -->
+                                                    <!--img src="https://layanan.jumpa.id/web/website/img/ipvt_logo_white.png?1.0.13.27" /-->
+                                    <!--<div class="slider-logo-ipvt">ABC</div>-->
+                    <!--新国际化-->
+                    <div style="color:yellow;" class="slider-logo-ipvt">Pemerintah Provinsi Jawa Barat</div>
+                    <div class="slider-logo-ipvt"><p>Rapat Daring, Sedaring / Webinar</p></div>
+
+                    <!--
+                                <p>
+                    Meet from anywhere, anytime on nearly any device                </p>  -->
+            </div>
+            <div id="sign-in-form">
+                <div class="panel panel-default">
+
+                    <div><!--new:add class: class="box-shadow-six"-->
+
+                        <div class="panel-heading form-header" id="form-header">
+                            
+                        <!--    <div class=' currentTab  pointer meetingType'>Join Meeting</div> -->
+                                <div class='currentTab pointer meetingType tooltiptext'>
+                                <img class='tooltiptext' src="https://nu.jumpa.id/join/icons_jumpa_join_terbaru.png" title="JOIN Rapat Daring, Sedaring / Webinar" width="35" height="35"></div>
+
+                        <!--    <div class=' normalTab  pointer meetingType hostType'>Host Meeting</div> -->
+                                <div class=' normalTab  pointer meetingType hostType'>
+                                <img class='tooltiptext' src="https://nu.jumpa.id/join/icons_jumpa_host_terbaru.png" title="HOST Rapat Daring, Sedaring / Webinar" width="35" height="35"></div>
+                                <div class="meetingTypeLine"></div> 
+                        </div>
+                        <div class="panel-body">
+                            <form class="login-form login-form-bg" action="https://layanan.jumpa.id/rtc/join" method="post">
+                                <input name="roleCode" type="hidden" value="">
+                                <div class="form-group first-form-group">
+                                    <b class="inputIcon meetingNum"></b>
+                                    <input name="meetingNum" class="form-control"  type="text" placeholder="Please Enter The Meeting ID" value="" maxlength="16">
+                                </div>
+                                <div class='form-group hostCode  undis '>
+                                    <b class="inputIcon hostCode"></b>
+                                                                            <input name="hostCode" class="form-control" type="text" placeholder="Please Enter Host Code" val="" value="">
+                                                                    </div>
+                                <div class="form-group">
+                                    <b class="inputIcon userName"></b>
+                                    <input name="userName" class="form-control" type="text" placeholder="Please Enter Your Name" maxlength="64" value="">
+                                </div>
+                                <div class="form-group undis">
+                                    <b class="inputIcon email"></b>
+                                    <input name="email" class="form-control" type="text" placeholder="Please Enter Your Email" maxlength="64" value="">
+                                </div>
+                                <div class="form-group">
+                                    <b class="inputIcon password"></b>
+                                    <input name="password" class="form-control" type="text" placeholder="Meeting password (if required)" maxlength="64" value="">
+                                </div>
+                                <input name="source" value="quick" type="hidden">
+
+                                <div class="text-center form-group btn-box">
+                                    <button id="joinButton" type="submit" class="btn btn-blue-radius">Join</button>
+                                    <div class="error-top error-form-group"></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="registerSuccess undis">
+                        <div class="panel-heading text-center form-header" id="form-header"></div>
+                        <span class="bg-pic bg-registerSuccess"></span>
+                        <div class="registerInfo">
+                            <div>You have successfully registered to attend this meeting. A confirmation has been sent to your email address:</div>
+                            <div class="registerMail">xxx@gs.com</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer login-footer">
+    <div class="topLine">
+                <div class="container">
+                    <div class="copyright">
+                &copy;<span class="andCopy-year">2020</span> Pemerintah Provinsi Jawa Barat - Rapat Daring, Sedaring / Webinar</div>
+                <!--
+            <ul>
+                                                                                        <li class="borderRight"><a href="http://layanan.jumpa.id" target='_blank'>About Us</a></li> -->
+                                                                            <!--
+                <li class="borderRight"><a href="http://www.facebook.com/GrandstreamNetworksInc" target='_blank'>Facebook</a></li>
+                <li class="borderRight"><a href="http://twitter.com/GrandstreamNet" target="_blank">Twitter</a></li>
+                --><!--
+                                                            <li><a href='http://layanan.jumpa.id' target='_blank'>Contact Us</a></li>
+                                                </ul> -->
+    <!--                                            
+            <div class='languageBox fl'>
+    <b class="ico-arr"></b>
+            <div class="languageCur">English</div>
+                        --><!--
+        		    	    		<div class="languageCur">English</div>
+    		    		    		    		    		    <div class="languageHide" style="display: none;">
+    	    		<span case="de">Deutsch</span>
+    	    		<span case="en">English</span>
+    	    		<span case="es">Español</span>
+    	    		<span case="fr">Français</span>
+    	    		<span case="ja">日本語</span>
+    	    		<span case="zh">简体中文</span>
+    	    		-->
+    	         <!--<span case="en">English</span>-->
+         <!--<span case="zh">简体中文</span>-->
+        <!--<span case="pt">Português</span>-->
+         <!--<span case="ja">日本語</span>-->
+         <!--<span case="es">Español</span> -->
+        <!--<span case="ar">العربية</span>--><!--
+    </div>
+</div>   
+-->
+</div>
+                    </div>
+</div></div>
+<script>
+    $(function(){
+        //解决IE8下背景图不能设置尺寸
+        if (window.navigator.userAgent.indexOf('IE 8.0')>0) {
+            $('.bigpic').show();
+        }
+        var meetingError = "";
+        $(document).on("click",".masking",function(){
+            boxClose();
+        })
+        boxBtnWidth();
+    })
+    
+    //IE/Safari插件检测
+//    if(validBrowser().indexOf('IE') > -1 || validBrowser() == 'Safari'){
+//        var script = document.createElement("script");
+//       script.type = "text/javascript";
+//        script.src = Style_Domain + "/web/js/webrtc/src/tinyMEDIA/src/adapter.js?i=" + DEPLOY_VERSION;
+//        document.getElementsByTagName("html")[0].appendChild(script);
+//    }
+
+    function reSend(){
+        $(".par-join-box .reSend").addClass("btn-disable");
+        $(".par-join-tip").text("").hide();
+        $.ajax({
+            url:"https://layanan.jumpa.id/rtc/resendInviteEmail",
+            email:"",
+            data: {email:"",meetingNum:""},
+            type:"post",
+            dataType:"json",
+            async:true,
+            success: function (result) {
+                if(result["state"] == 0){
+                    $(".par-join-tip").text("Email sent successfully").show();
+                }else{
+                    $(".par-join-tip").text("Email sent failed").show();
+                }
+                setTimeout(function(){
+                    $(".par-join-box .reSend").removeClass("btn-disable");
+                    $(".par-join-tip").text("").hide();
+                },5000)
+            }
+        });
+    }
+    function boxClose() {
+        $(".masking,.auditing-box,.par-join-box").hide();
+    }
+
+    //两个按钮一样宽
+    function boxBtnWidth(){
+        var leftWidth;
+        var rightWidth;
+        var bothWidth;
+        if($(".par-join-box").length >=1){
+            leftWidth = $(".par-join-box").find("span:first").width();
+            rightWidth = $(".par-join-box").find("span:last").width();
+            bothWidth = leftWidth>rightWidth ? leftWidth+1 : rightWidth+1
+            $(".par-join-box").find("span").width(bothWidth);
+            if((bothWidth+60)*2 >= 350){
+                $(".par-join-box").width((bothWidth+60)*2+64);//50为按钮内部的留空的和，350为初始按钮可放置的空间，64为按钮区域距离外边框的距离和
+            }
+            $(".par-join-box").removeClass("vis-hide");
+        }
+        if($(".auditing-box").length >=1){
+            leftWidth = $(".auditing-box").find("span:first").width();
+            rightWidth = $(".auditing-box").find("span:last").width();
+            bothWidth = leftWidth>=rightWidth ? leftWidth+1 : rightWidth+1;
+            $(".auditing-box").find("span").width(bothWidth);
+            if((bothWidth+60)*2 >= 350){
+                $(".auditing-box").width((bothWidth+60)*2+64);
+            }
+            $(".auditing-box").removeClass("vis-hide");
+        }
+    }
+</script>
+<script src="https://layanan.jumpa.id/web/js/ui/ui_common.js?i=1.0.13.27"></script>
+<script src="https://layanan.jumpa.id/web/js/conference/join_conf.js?i=1.0.13.27"></script>
+<!--<script src="https://layanan.jumpa.id/web/website/js/bootstrap.min.js"></script>-->
+<script src="https://layanan.jumpa.id/web/js/common/zopim.js"></script>
+<!--[if lt IE 9]>
+<script src="https://layanan.jumpa.id/web/website/js/html5shiv.min.js"></script>
+<script src="https://layanan.jumpa.id/web/website/js/respond.min.js"></script>
+<link href="https://layanan.jumpa.id/web/website/js/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
+<link href="https://layanan.jumpa.id/s/respond.proxy.gif?1.0.13.27" id="respond-redirect" rel="respond-redirect" />
+<script src="https://layanan.jumpa.id/s/respond.proxy.js"></script>
+<![endif]-->
+</body>
+</html>

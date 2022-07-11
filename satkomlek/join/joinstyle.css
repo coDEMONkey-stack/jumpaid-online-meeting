@@ -1,0 +1,319 @@
+input::-webkit-input-placeholder{
+    color: #BDC7D3;
+}
+li b, div b, label b, button b, span button, span b, td b, th b{
+    background-image: url("../img/ui-icon.png?1.0.15.7");
+}
+.footer .container{
+    line-height: 56px;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+.all-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: #FFF;
+    bottom: 0;
+    background: url(../../img/conference/bg.jpg) center 0 no-repeat;
+    background-size: cover;
+    min-height: 680px;
+}
+.login-header{
+    height: 60px;
+    background: rgba(199, 68, 66, 1);
+}
+#sign-in-content{
+    width: 70%;
+    margin: 21vh auto 0
+}
+#slider-logo{
+    text-align: center;
+    width: 55%;
+    height: auto;
+    max-width: 540px
+}
+.login-header .bg-navlogo{
+    /*width: 52px;*/
+    height: 36px;
+    margin-top: 6px;
+    background-image: url("../img/ui-icon.png?1.0.15.7");
+    background-position: -363px -25px;
+}
+.login-logo{
+    margin-top: 8vh;
+    width:285px;
+    height:178px;
+    background-position: -40px -27px;
+    display: inline-block;
+    transform: scale(0.85);
+}
+img.login-logo {
+    background: none;
+    width: auto;
+}
+.login-header .link {
+    display: inline;
+    float: right;
+    margin: 15px 40px 0px 0px;
+    height: 26px;
+}
+.login-header .link a{
+    color: rgba(255,255,255,0.7);
+    height: 26px;
+    padding: 0 26px;
+    line-height: 26px;
+    display: inline-block;
+    text-decoration: none;
+    box-sizing: content-box;
+}
+.login-header .link a:hover{
+    background: none;
+    color: rgba(255,255,255,1);
+}
+.login-header .link .left {
+    margin-right: 10px;
+}
+.login-header .link a.right {
+    background: none;
+    color: rgba(255,255,255,0.7);
+    border-radius: 2px;
+    border:1px solid rgba(255,255,255,0.4);
+}
+.login-header .link a.right:hover{
+    background:rgba(255,255,255,0.1);
+    color: rgba(255,255,255,1);
+}
+
+#slider-logo  .slider-logo-ipvt{
+    font-size: 50px;
+    line-height: 68px;
+    margin: 10px auto 0;
+}
+#slider-logo  .slider-logo-ipvt2{
+    font-size: 35px;
+    line-height: 60px;
+    margin: 10px auto 0;
+    color: white;
+}
+
+#slider-logo p {
+    font-size: 28px;
+    line-height: 36px;
+    color: rgba(255,255,255,0.45);
+}
+#sign-in-form{
+    min-width: 420px;
+    margin-top: 5vh;
+}
+#sign-in-form .panel-heading {
+    background: none;
+    padding: 0;
+    margin: 38px 30px 20px;
+    height: 36px;
+    text-align: left;
+    position: relative;
+}
+.meetingType{
+    float: left;
+}
+.meetingTypeLine{
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #DEE4EB;
+    bottom: 0;
+}
+#sign-in-form .panel-body{
+    margin-top: 0;
+    padding: 0 30px;
+}
+.panel{
+    background-color: rgba(255,255,255,0.95);
+    border-radius: 10px;
+}
+.form-group{
+    margin-top: 0;
+    margin-bottom: 20px;
+    position: relative;
+}
+.inputIcon{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 12px;
+    left: 18px;
+    z-index: 1;
+}
+.inputIcon.meetingNum{
+    background-position: -872px -36px;
+}
+.inputIcon.hostCode{
+    background-position: -821px -36px;
+}
+.inputIcon.userName{
+    background-position: -769px -36px;
+}
+.inputIcon.email{
+    background-position: -924px -36px;
+}
+.inputIcon.password{
+    background-position: -821px -36px;
+}
+.meetingType{
+    font-size: 18px;
+    line-height: 24px;
+    height: 36px;
+    color: rgba(0,82,137,0.4);
+    font-weight:600;
+}
+.meetingType.currentTab{
+    color: rgba(199, 68, 66, 1);
+    position: relative;
+}
+.meetingType.currentTab:after{
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #C74442 ;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+.hostType{
+    margin-left: 30px;
+}
+.form-control{
+    border-radius: 5px;
+    border: 1px solid #fff;
+    box-shadow: none;
+    height: 40px;
+    line-height: 28px;
+    padding: 5px 12px 5px 46px;
+}
+.form-control:focus{
+    border: 1px solid #005289;
+}
+.input-border-red{
+    background:rgba(255,236,236,1);
+    border:1px solid rgba(249,91,91,1);
+}
+.btn-box{
+    margin-top: 30px;
+    margin-bottom: 55px;
+    position: relative;
+    overflow: visible;
+}
+.error-form-group{
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+}
+#joinButton{
+    width: 100%;
+    height:40px;
+    background:rgba(199, 68, 66, 1);
+    box-shadow:0px 4px 26px 0px rgba(0, 0, 0, 0);
+    border-radius:5px;
+    border: none;
+    font-size: 15px;
+}
+.btn-blue:hover{
+  background-color:#000000 ;
+  cursor:pointer;
+}
+.footer-logo{
+    right: auto;
+    height: 26px;
+    margin-left: 40px;
+}
+.footer-logo b{
+    width: 120px;
+    background: url("../img/ui-icon.png?1.0.15.7") -619px -32px;
+}
+.footer .topLine{
+    margin: 0;
+}
+.login-footer .container{
+    padding-top: 0;
+}
+.footer .container ul{
+    margin: 18px 30px;
+}
+.footer .container ul li{
+    padding: 0;
+    line-height: 20px;
+    margin-left: 0;
+    /*font-weight: 600;*/
+    display: inline-block;
+}
+.login-footer .container ul li, .login-footer .container ul li a{
+    color: rgba(255,255,255,0.45);
+}
+.footer.login-footer .container ul li.borderRight{
+    border-right: none;
+}
+.footer.login-footer .container ul li.borderRight:after{
+    content: ' ';
+    height: 16px;
+    width: 2px;
+    background-color: rgba(255,255,255,0.45);
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 5px;
+}
+.login-footer .copyright{
+    color: rgba(255, 255, 255, 0.45);
+}
+.login-footer .languageBox{
+    margin-top: 14px;
+    background-color: transparent;
+    border: 1px solid #668EA9;
+}
+.languageBox .languageCur {
+    display: block;
+    color: rgba(255, 255, 255, 0.9);
+}
+.languageBox .ico-arr{
+    background: url("../img/ui-icon.png?1.0.15.7") -1215px -30px;
+}

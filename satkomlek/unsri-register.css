@@ -1,0 +1,589 @@
+/********* NU-register.css ***********/
+body{min-height: 690px;}
+body.login-body{
+    min-width: 1280px;
+}
+.signup-container{min-height: 800px;}
+/********************/
+.login-container {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    color: #FFF;
+    bottom: 0;
+    background: url("../img/login-bg.jpg") no-repeat scroll center top transparent;
+    background-size: cover;
+}
+
+.login-container .login-content {
+    position: absolute;
+    width: 920px;
+    height: 510px;
+    top: -300px;
+    left: -460px;
+}
+.login-container .signup-content{top:-325px;}
+
+.login-container .login-content.login-info-container {
+    height: 370px;
+}
+
+.login-container .login-content .desc {
+    float: left;
+    width: 545px;
+    height: 100%;
+    display: none;
+}
+
+.login-container .login-content .desc .title {
+    font-size: 46px;
+    margin-bottom: 20px;
+    margin-top: 80px;
+}
+
+.login-container .login-content .desc .content p {
+    font-size: 28px;
+    line-height: 40px;
+    color: #dbddde;
+}
+
+.login-container .login-content .desc .icon {
+    margin-top: 30px;
+}
+
+.login-container .login-content .desc .icon li {
+    float: left;
+    width: 60px;
+}
+
+.login-container .login-content .desc .icon li b {
+    width: 30px;
+    height: 29px;
+}
+
+.login-container .login-content .desc .icon li.video b {
+    background-position: -34px -36px;
+}
+
+.login-container .login-content .desc .icon li.talk b {
+    background-position: -112px -34px;
+}
+
+.login-container .login-content .desc .icon li.mic b {
+    background-position: -184px -30px;
+}
+
+.login-container .login-content .desc .icon li.video, .login-container .login-content .desc .icon li.talk {
+    margin-top: 5px;
+}
+
+.login-container .login-content .login {
+    /*float: left;*/
+    width: 472px;
+    background: #fff;
+    /*æŠŠ30%çš„ä¸é€æ˜Žåº¦è½¬æ¢æˆåå…­åˆ¶å‘¢çš„æ–¹æ³•å¦‚ä¸‹ï¼šå…ˆè®¡ç®—#AAçš„çš„åè¿›åˆ¶xï¼Œx/255 = 3/10ï¼Œè§£å¾—x=3*255/10ï¼Œç„¶åŽå†æŠŠxæ¢ç®—æˆåå…­è¿›åˆ¶ï¼Œçº¦ç­‰äºŽ4Bã€‚*/
+    /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#33ffffff, endColorstr=#33ffffff);*/
+    color: #fff;
+    border-radius: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow:-3px 0 15px rgba(0,0,0,0.1), /*å·¦è¾¹é˜´å½±*/
+    3px 0 15px rgba(0,0,0,0.1), /*å³è¾¹é˜´å½±*/
+    0 -3px 15px rgba(0,0,0,0.1), /*é¡¶éƒ¨é˜´å½±*/
+    0 3px 15px rgba(0,0,0,0.1); /*åº•è¾¹é˜´å½±*/
+}
+
+.login-container .login-content .login.login-margin {
+    margin-top: 60px;
+}
+
+.login-container .login-content .login .login-form {
+    width: 100%;
+    /*height: 343px;*/
+    /*height: 100%;*/
+}
+#loginForm{
+    /*height: 343px;*/
+}
+/* #registerForm{
+    height: 820px;
+} */
+#loginInfoForm{
+    height: 413px;
+}
+.login-form .submit .system-error{
+    /*right: -60px;*/
+    left: 125px;
+    position: absolute;
+    top: 1px;
+    max-width:300px;
+    z-index:3;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 14px;
+}
+.login-container .login-content .login .login-form .form-row {
+    padding-left: 48px;
+    position: relative;
+    height: 70px;
+}
+
+.login-container .login-content .login .login-form .form-row .name {
+    display: inline-block;
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+    color: #55585a;
+}
+
+.login-container .login-content .login-form .title {
+    width: 100%;
+    height: 108px;
+    line-height: 90px;
+    text-align: center;
+    font-size: 32px;
+    /*background-color: #2c91d4;*/
+    border-radius: 3px 3px 0 0;
+    margin-bottom: -18px;
+    background: url("../img/title_shade.png") repeat;
+    background-size: cover;
+    color: #2d90d5;
+}
+
+.login-form .form-row input {
+    border: 1px solid #C0BDBE;
+    border-radius: 3px;
+    height: 23px;
+    line-height: 23px;
+    padding: 4px 7px;
+    /*width: 285px;*/
+    width: 360px;
+}
+
+.login-form .form-row input.error , .forgetCheckForm .form-row input.error{
+    border: 1px solid #c93538;
+}
+.login-form .form-row input.error , .forgetCheckForm .form-row input.error{
+    background-color: #ffecec;
+}
+
+.login-form .form-row input:focus , .forgetCheckForm .form-row input:focus{
+    border: 1px solid #0097ff;
+}
+
+.login-form .form-row input, .login-form .form-row .selectbox , .forgetCheckForm .form-row input, .forgetCheckForm .form-row .selectbox{
+    color: #000;
+    font-size: 16px;
+}
+.login-form .form-row .selectbox .s-hide-box , .forgetCheckForm .form-row .selectbox .s-hide-box{
+    font-size: 14px;
+}
+.login-form .form-row.enterpriseLocal .selectbox {
+    width: 376px;
+}
+
+.login-form .form-row.contactCallLast .selectbox {
+    width: 150px;
+}
+
+.login-form .form-row.contactCallLast input {
+    width: 200px;
+    float: left;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.login-form .form-row.securityCode input {
+    width: 200px;
+    display: inline-block;
+    float: left;
+}
+
+.login-form .form-row.securityCode img {
+    margin-left: 10px;
+    display: inline-block;
+    float: left;
+    border-radius: 3px;
+    margin-right: 5px;
+    width: 149px;
+    cursor: pointer;
+}
+
+.login-form .form-row.btn {
+    /*text-align: center;*/
+    /*padding-right: 30px;*/
+}
+
+.login-form .form-row.btn button{
+    min-width: 120px;
+    margin: 10px 0px 0px 128px;
+    position: relative;
+    overflow: visible;
+    /*z-index: 1;*/
+}
+
+.forgetCheckForm .btn .system-error {
+    left: 190px;
+    position: absolute;
+    top: 0px;
+    max-width: 400px;
+    z-index: 3;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 14px;
+}
+.login-container .login-content .login .login-form .form-row.selectUserProtocol {
+    height: auto;
+}
+
+.login-container .login-content .login .login-form .form-row.forgetPwd {
+    height: 20px;
+    text-align: right;
+    padding-right: 48px;
+    margin-top: -8px;
+}
+
+.login-container .login-content .login .login-form .form-row.forgetPwd label a {
+    cursor: pointer;
+    color: #2395c4;
+}
+.login-container .login-content .login .login-form .form-row.forgetPwd label a:hover {
+    color: #0178a9;
+    text-decoration: underline;
+}
+
+.login-form .form-row .error-box, .forgetCheckForm .form-row .error-box {
+    display: inline-block;
+    line-height: 30px;
+    padding-right: 5px;
+    padding-left: 5px;
+    background-color: rgba(237, 235, 235, 0.8);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#bbedebeb, endColorstr=#bbedebeb);
+    border-radius: 4px;
+    color: #37474e;
+}
+
+.login-form .form-row .error-box.error, .forgetCheckForm .form-row .error-box.error {
+    background-color: rgba(216, 82, 60, 0.8);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#bbd8523c, endColorstr=#bbd8523c);
+    color: #fff;
+}
+
+.login-form .form-row .error-box.error.checked, .forgetCheckForm .form-row .error-box.error.checked {
+    background-color: transparent;
+}
+
+.login-form .form-row .error-box {
+    position: absolute;
+    bottom: 12px;
+    left: 436px;
+    text-align: right;
+    /*width: 200px;*/
+    line-height: 34px;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.forgetCheckForm .form-row .error-box {
+    position: absolute;
+    left: 282px;
+    top: 10px;
+    max-width: 600px;
+    overflow: hidden;
+    text-align: left;
+    white-space: nowrap;
+    font-size: 12px;
+}
+
+.login-form .form-row .success, .forgetCheckForm .form-row .success {
+    width: 20px;
+    height: 20px;
+    background-position: -126px -176px;
+    display: none;
+}
+
+.forgetCheckForm .form-row .success {
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.login-container .absolute-center .register-success {
+    width: 760px;
+    height: 530px;
+    position: absolute;
+    top: -250px;
+    left: -370px;
+    text-align: center;
+    background-color: rgba(4, 19, 40, 0.7);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#51000000, endColorstr=#51000000);
+    border-radius: 4px;
+}
+
+.login-container .absolute-center .register-success .content {
+    margin-top: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.login-container .absolute-center .register-success .content.gotoEmail {
+    margin-top: 20px;
+}
+
+.login-container .absolute-center .register-success .content.gotoEmail .btn {
+    margin-top: 20px;
+}
+
+.login-container .absolute-center .register-success .goto-email-button {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.login-container .absolute-center .register-success .goto-email-button label {
+    display: block;
+    float: left;
+    width: 100%;
+    text-align: center;
+    line-height: 30px;
+}
+
+.login-container .absolute-center .register-success .goto-email-button .resend-email {
+    display: inline-block;
+    margin-top: 10px;
+    height: 34px;
+    border-radius: 17px;
+    padding: 2px 16px;
+    line-height: 36px;
+    cursor: default;
+    position: relative;
+}
+
+.login-container .absolute-center .register-success .goto-email-button .resend-email.btn-grey-radius {
+    background-color: #3d4345;
+    color: #5b6062;
+}
+
+.login-container .absolute-center .register-success .goto-email-button .resend-email.btn-blue-radius {
+    color: #FFF;
+    cursor: pointer;
+}
+
+.login-container .absolute-center .register-success .content label {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.login-container .absolute-center .register-success .content .big-title {
+    font-size: 24px;
+    color: #41b1ff;
+}
+
+.login-container .absolute-center .register-success .content .small-title {
+    margin-top: 20px;
+    line-height: 30px;
+}
+
+.login-container .absolute-center .register-success .content .btn {
+    margin-top: 36px;
+}
+
+.login-container .absolute-center .register-success .content .btn button {
+    font-size: 18px;
+    padding: 3px 30px;
+}
+
+.login-container .absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1px;
+    height: 1px;
+}
+
+.login-container .absolute-center .register-success .find-pwd-box {
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.login-container .absolute-center .register-success .find-pwd-box.find-pwd-box-gotomail {
+    margin-top: 70px;
+}
+
+.login-container .absolute-center .register-success .find-pwd-box .big-title {
+    font-size: 26px;
+}
+
+.login-container .find-pwd-box .steps {
+    position: relative;
+    height: 80px;
+    line-height: 22px;
+    margin: 20px 0px 25px;
+    text-align: center;
+}
+
+.login-container .find-pwd-box .steps .step {
+    float: left;
+    width: 130px;
+}
+
+.login-container .find-pwd-box .steps .step .icon {
+    display: block;
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+    background-color: rgba(104, 104, 104, 0.4);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#66686868,endColorstr=#66686868);
+    text-align: center;
+    line-height: 36px;
+    font-size: 24px;
+    margin: 0 auto;
+}
+
+.login-container .find-pwd-box .steps .step .icon b {
+    width: 23px;
+    height: 20px;
+    background: url("../img/icon.png");
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    display: inline-block;
+    background-position: -254px -36px;
+}
+
+.login-container .find-pwd-box .steps .step ul li {
+    height: 50px;
+}
+.login-container .find-pwd-box .steps ol{
+    padding-left: 68px;
+}
+.login-container .find-pwd-box .steps ol li.steps-line {
+    width: 130px;
+    height: 1px;
+    margin: 20px -25px 0px;
+    overflow: hidden;
+    font-size: 0px;
+    background: rgba(104, 104, 104, 0.6);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#97686868,endColorstr=#97686868);
+}
+
+.login-container .find-pwd-box .steps .succeed-step .icon {
+    background-color: #2d92d5;
+}
+
+.login-container .find-pwd-box .step.succeed-step .text {
+    color: #2d90d5;
+}
+
+.login-container .find-pwd-box .step .text {
+    color: #9d9d9d;
+}
+
+.login-container .find-pwd-box .forgetCheckForm table {
+    width: 100%;
+}
+
+.login-container .find-pwd-box .forgetCheckForm table tr {
+    height: 50px;
+}
+
+.login-container .find-pwd-box .forgetCheckForm table tr td {
+    position: relative;
+    overflow: visible;
+}
+
+.login-container .find-pwd-box .forgetCheckForm table tr td.col1 {
+    width: 28%;
+}
+
+.login-container .find-pwd-box .forgetCheckForm table tr.form-row-marginTop {
+    height: 18px;
+}
+
+.login-container .find-pwd-box .forgetCheckForm .email input {
+    width: 250px;
+    float: left;
+    margin-left: 10px;
+}
+
+.login-container .find-pwd-box .forgetCheckForm .securityCode input {
+    float: left;
+    width: 135px;
+    margin-left: 10px;
+}
+
+.login-container .find-pwd-box .forgetCheckForm .securityCode img {
+    margin-left: 10px;
+    display: inline-block;
+    float: left;
+    border-radius: 3px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.login-container .find-pwd-box .forgetCheckForm .form-row .btn {
+    padding: 2px 5px;
+    position: relative;
+    overflow: visible;
+    min-width: 185px;
+    margin-top: -4px;
+}
+
+.userAgreement{
+    color: #4fccff;
+    cursor: pointer;
+}
+.userAgreement:hover{
+    color: #2395c4;
+    text-decoration: underline;
+}
+/* joiner box */
+.joiner-box{ float: left; width: 369px; height: 56px; padding: 2px; margin: 0; border:1px solid #ccc; border-radius:2px; background: #fff; cursor: text;position: relative}
+.joiner-box.focus{border:1px solid #0097ff}
+.joiner-box .overview{width: 100%; height: 56px;overflow-y: auto;overflow-x:hidden}
+.joiner-box .joiner-input-box{float: left; height: 22px; line-height: 22px; padding: 2px;max-width: 358px;display: inline-block;overflow: hidden;position: relative;}
+.joiner-box .placeholder-box{vertical-align: top;}
+.joiner-box .placeholder-box .placeholder-txt{ line-height: 22px; text-indent: 0;}
+.joiner-item{display: inline-block;position: relative;float: left;max-width: 260px;height: 20px;line-height: 20px;margin: 2px;
+    padding: 0px 22px 2px 10px;border-radius: 12px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;word-wrap: normal;
+    background: none repeat scroll 0% 0% rgb(242, 249, 254);border: 1px solid rgb(196, 230, 250);}
+.joiner-item span{white-space: nowrap}
+@media screen and (-webkit-min-device-pixel-ratio: 0){
+    .joiner-item{
+        white-space: normal;
+    }
+}
+.joiner-item span.del{ position: absolute; top: 6px; right: 1px; cursor: pointer; background-image: url("../img/icon.png");background-repeat: no-repeat;vertical-align: middle;display: inline-block;width: 15px;height: 15px;}
+.joiner-item:hover span.del{ background-position: -507px -94px; }
+.joiner-item .view-main{color: #666}
+.joiner-item .view-minor{color: #999;margin-left: 2px}
+.joiner-item.joiner-success:hover{ background-color: #56b7df;border: 1px solid #56b7df;}
+.joiner-item.joiner-success:hover span{
+    color: #fff;
+}
+.joiner-error{ background: #ffe1cc; border-color: #fbb787; color: #f56a0a;}
+.joiner-error span.del{ background-position: -90px -144px;}
+.login-form .form-row input.input-style-one{ width: 100%; height: 18px; line-height: 18px; padding: 2px 2px 2px 0; border: 1px solid #fff; background: #fff;display: inline;position: absolute;left: 0;}
+.editable-txt{visibility: hidden;}
+.login-form .form-row input.input-style-one:focus{border: 1px solid #fff;}
+.login-form .form-row input.input-style-one.error , input.input-style-one.error:focus{color: #C93538;border: 1px solid #fff;}
+.login-form .form-row input.input-style-one{border: none}
+.orderOwnerInputTip{color: #ccc;line-height: 25px;}
+
+.required-icon {
+    color: #ff0000;
+    line-height: 15px;
+    margin-left: 5px;
+    vertical-align: middle;
+    padding-top: 2px;
+}
+
+#joiner-error{left: 436px;display: none;bottom: 38px;}
+/*body{min-height: 850px;}*/
+.login-container .login-content .login .login-form .form-row.relativedDevice{height: 98px;}
+.resend-email.btn-grey-radius {background-color:#8894a4;}
+.termsDes{color: #c8c8c8;position: relative;z-index: 2;}
+.explain-link-device{width: 20px; height: 20px;background-position: -580px -476px;margin-left: 5px;}
+#loginInfoForm.userActiveSetPwd{height: 484px;}
